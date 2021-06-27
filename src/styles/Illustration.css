@@ -1,0 +1,32 @@
+#Illustration {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#Illustration-text {
+    margin-left: 10%;
+}
+
+#Illustration-heading {
+    font-size: 450%;
+    font-weight: 800;
+    color: rgb(52, 48, 62);
+    line-height: 100%;
+}
+
+#Illustration-description {
+    color: rgb(170, 169, 164);
+    padding-top: 2%;
+}
+
+#Illustration-image {
+    display: flex;
+    height: 50%;
+    width: 50%;
+}
+
+#Illustration-button {
+    margin-left: 0%;
+}
