@@ -17,18 +17,30 @@ class App extends React.Component{
     this.change = this.change.bind(this)
     this.submit = this.submit.bind(this)
     this.copythelink = this.copythelink.bind(this)
+    this.errorvisible = this.errorvisible.bind(this)
+    this.errorinvisible = this.errorinvisible.bind(this)
+  }
+  errorvisible(){
+    let x = document.getElementById('inputurl')
+    x.style.borderColor = "red"
+  }
+  errorinvisible(){
+    let x = document.getElementById('inputurl')
+    x.style.borderColor = "grey"
   }
   change(e){
     this.setState({
       url: e.target.value,
       puterror: " "
     })
+    this.errorinvisible()
   }
   async submit(){
     if(this.state.url===""){
       this.setState({
         puterror: "Please add a link"
       })
+      this.errorvisible()
       return
     }
     try{
@@ -70,10 +82,12 @@ class App extends React.Component{
       <div id="input-container">
       <div id="grey-background"></div>
         <span id="inputing">
+      <span id="minicontainer">
       <input id="inputurl" type="text" placeholder="Shorten a link here..." onChange={this.change} value={this.state.url}></input>
+      <div id="warning">{this.state.puterror}</div>
+      </span>
       <button id="submit" onClick={this.submit} className="btn">Shorten it</button><br/>
       </span>
-      <div id="warning">{this.state.puterror}</div>
       <div id="history-urls">
         {
           this.props.data.map((x,i)=>{

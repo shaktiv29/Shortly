@@ -27,7 +27,7 @@ function Features(){
                         confidence in your content.
                     </div>
                 </li>
-                <li><div className="card-box"></div></li>
+                <li><div className="card-box" id="card-box-2"></div></li>
                 <li className="feature-card" id="feature-card-2"><div className="square-image">
                     <img src={DetailedRecords} alt="DR"></img>
                     </div>

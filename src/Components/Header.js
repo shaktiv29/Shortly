@@ -14,7 +14,6 @@ function Header(){
                 <button className="header-button">Login</button>
                 <button id="sign-up">Sign Up</button>
             </span>
-
         </div>
     )
 }

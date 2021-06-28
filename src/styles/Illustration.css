@@ -30,3 +30,19 @@
 #Illustration-button {
     margin-left: 0%;
 }
+
+@media (max-width:952px) {
+    #Illustration {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    #Illustration-heading {
+        margin-top: 10%
+    }
+    #Illustration-text {
+        margin-top: 10%
+    }
+    #Illustration-image {
+        min-width: 600px;
+    }
+}

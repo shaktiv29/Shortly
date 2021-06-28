@@ -36,3 +36,24 @@
     background-color: rgb(155, 227, 226);
     border: rgb(155, 227, 226) 1px solid;
 }
+
+@media (max-width:952px) {
+    #boost {
+        background-image: url('../assets/bg-boost-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgb(58, 48, 83);
+        text-align: center;
+        height: 260px;
+        width: 160%;
+        margin-left: -20vw;
+    }
+    #boost-head {
+        margin-left: 0%;
+        margin-right: auto;
+    }
+    .boost-button {
+        margin-left: 0%;
+        margin-right: auto;
+    }
+}
