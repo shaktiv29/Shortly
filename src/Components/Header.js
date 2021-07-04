@@ -1,20 +1,20 @@
-import '../styles/Header.css'
 import Logo from '../assets/logo.svg'
+import { Headerr, HeaderLogo, HeaderButton, HeaderFirstPart, HeaderSecondPart, SignUp } from '../styled/HeaderStyle';
 
 function Header(){
     return (
-        <div id="header">
-            <span id="header-logo"><img src={Logo} alt="Logo"></img></span>
-            <span id="header-first-part">
-                <button className="header-button">Features</button>
-                <button className="header-button">Pricing</button>
-                <button className="header-button">Resources</button>
-            </span>
-            <span id="header-second-part">
-                <button className="header-button">Login</button>
-                <button id="sign-up">Sign Up</button>
-            </span>
-        </div>
+        <Headerr>
+            <HeaderLogo><img src={Logo} alt="Logo"></img></HeaderLogo>
+            <HeaderFirstPart>
+                <HeaderButton>Features</HeaderButton>
+                <HeaderButton>Pricing</HeaderButton>
+                <HeaderButton>Resources</HeaderButton>
+            </HeaderFirstPart>
+            <HeaderSecondPart>
+                <HeaderButton>Login</HeaderButton>
+                <SignUp>Sign Up</SignUp>
+            </HeaderSecondPart>
+        </Headerr>
     )
 }
 

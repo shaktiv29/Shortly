@@ -1,17 +1,16 @@
 import React from 'react';
-import '../styles/App.css'
-import '../styles/Boost.css'
+import { Booost, BoostHead, BoostButton } from '../styled/Booststyle.js'
 
 const Boost = ()=>{
     return(
-        <div id="boost">
-            <div id="boost-head">
+        <Booost>
+            <BoostHead>
             Boost your links today
-            </div>
-            <button className="boost-button">
+            </BoostHead>
+            <BoostButton>
                 Get Started
-            </button>
-        </div>
+            </BoostButton>
+        </Booost>
     )
 }
 

@@ -1,62 +1,62 @@
-import '../styles/Features.css'
 import BrandRecognition from '../assets/icon-brand-recognition.svg'
 import DetailedRecords from '../assets/icon-detailed-records.svg'
 import FullyCustomizable from '../assets/icon-fully-customizable.svg'
+import {Featuress, FeatureHeading, FeatureDescription, FeatureCards, FeatureCard1, FeatureCard2, FeatureCard3, CardBox, CardBox2, SquareImage, CardTitle, CardDescription} from '../styled/FeatureStyle'
 
 function Features(){
     return (
-        <section id="features">
-        <div id="feature-heading">
+        <Featuress>
+        <FeatureHeading>
             Advanced Statistics
-          </div>
-          <div id="feature-description">
+          </FeatureHeading>
+          <FeatureDescription>
             Track how your links are performing across the web with<br/>
             our advanced statistics dashboard.
-          </div>
-          <ul id="feature-cards">
-                <li className="feature-card" id="feature-card-1"><div className="square-image">
+          </FeatureDescription>
+          <FeatureCards>
+                <FeatureCard1><SquareImage>
                     <img src={BrandRecognition} alt="BR"></img>
-                    </div>
-                    <div className="card-title">
+                    </SquareImage>
+                    <CardTitle>
                         Brand Recognition
-                    </div>
-                    <div className="card-description">
+                    </CardTitle>
+                    <CardDescription>
                         Boost your brand recognition with <br/>
                         each click. Generic links don't mean a <br/>
                         thing. Branded links help instil <br/>
                         confidence in your content.
-                    </div>
-                </li>
-                <li><div className="card-box" id="card-box-2"></div></li>
-                <li className="feature-card" id="feature-card-2"><div className="square-image">
+                    </CardDescription>
+                </FeatureCard1>
+                <li><CardBox2></CardBox2></li>
+                <FeatureCard2><SquareImage>
                     <img src={DetailedRecords} alt="DR"></img>
-                    </div>
-                    <div className="card-title">
+                    </SquareImage>
+                    <CardTitle>
                         Detailed Records
-                    </div>
-                    <div className="card-description">
+                    </CardTitle>
+                    <CardDescription>
                         Gain insights into who is clicking your <br/>
                         links. Knowing when and where<br/>
                         people engage with your content <br/>
                         helps inform better decisions.
-                    </div>
-                </li>
-                <li><div className="card-box"></div></li>
-                <li className="feature-card" id="feature-card-3"><div className="square-image">
+                    </CardDescription>
+                </FeatureCard2>
+                <li><CardBox></CardBox></li>
+                <FeatureCard3><SquareImage>
                     <img src={FullyCustomizable} alt="FC"></img>
-                    </div>
-                    <div className="card-title">
+                    </SquareImage>
+                    <CardTitle>
                         Fully Customizable
-                    </div>
-                    <div className="card-description">
+                    </CardTitle>
+                    <CardDescription>
                         Improve brand awareness and <br/>
                         content discoverability through <br/>
                         customizable links, supercharging <br/>
                         audience engagement.
-                    </div>
-                </li>
-          </ul>
-          </section>
+                    </CardDescription>
+                </FeatureCard3>
+          </FeatureCards>
+          </Featuress>
     )
 }
 

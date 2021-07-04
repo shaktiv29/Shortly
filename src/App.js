@@ -1,4 +1,3 @@
-import './styles/App.css';
 import React from 'react';
 import axios from 'axios';
 import Header from './Components/Header'
@@ -6,6 +5,7 @@ import Illustration from './Components/Illustration';
 import Features from './Components/Features'
 import Boost from './Components/Boost';
 import Footer from './Components/Footer';
+import {GlobalStyle, Inputing, InputContainer, InputUrl, Btn, GreyBackground, CopyButton, MiniContainer, Warning, HistoryUrls, OldLink, NewLink, LinkHistory, NewLinkk } from './styled/Appstyle.js';
 
 class App extends React.Component{
   constructor(props){
@@ -77,41 +77,43 @@ class App extends React.Component{
   render(){
   return (
     <div className="App">
+      <GlobalStyle />
       <Header />
       <Illustration />
-      <div id="input-container">
-      <div id="grey-background"></div>
-        <span id="inputing">
-      <span id="minicontainer">
-      <input id="inputurl" type="text" placeholder="Shorten a link here..." onChange={this.change} value={this.state.url}></input>
-      <div id="warning">{this.state.puterror}</div>
-      </span>
-      <button id="submit" onClick={this.submit} className="btn">Shorten it</button><br/>
-      </span>
-      <div id="history-urls">
+      <InputContainer>
+      <GreyBackground></GreyBackground>
+        <Inputing>
+      <MiniContainer>
+      <InputUrl id="inputurl" type="text" placeholder="Shorten a link here..." onChange={this.change} value={this.state.url}></InputUrl>
+      <Warning>{this.state.puterror}</Warning>
+      </MiniContainer>
+      <Btn onClick={this.submit}>Shorten it</Btn><br/>
+      </Inputing>
+      <HistoryUrls>
         {
           this.props.data.map((x,i)=>{
-              return <div className="link-history" key={i}>
-                <span className="old-link">
+              return <LinkHistory key={i}>
+                <OldLink>
                   {x[0]}
-                </span>
-                <span className="new-link">
-                  <span className="infoss">{x[1]}</span>
-                <button className="copy-button btn" id={i} onClick={()=>{this.copythelink(i)}}>Copy</button>
-                </span> 
-                </div>
+                </OldLink>
+                <NewLink>
+                  <NewLinkk>{x[1]}</NewLinkk>
+                <CopyButton id={i} onClick={()=>{this.copythelink(i)}}>Copy</CopyButton>
+                </NewLink> 
+                </LinkHistory>
           })
         }
-      </div>
+      </HistoryUrls>
       <Features />
       <Boost />
       <Footer />
-      </div>
+      </InputContainer>
     </div>
+    
   );
 }
 }
 
-App.defaultProps ={ data:[]}
+App.defaultProps ={ data:[['https://google.com','https://shortly.com/sdifj']]}
 
 export default App;

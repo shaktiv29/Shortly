@@ -1,22 +1,22 @@
 import IllustrationImage from "../assets/illustration-working.svg";
-import '../styles/Illustration.css'
+import { Illustrationn, IllustrationText, IllustrationHeading ,IllustrationDescription, IllustrationButton, IllustrationImagee } from "../styled/IllustrationStyle";
 
 function Illustration(){
     return (
-        <div id="Illustration">
-            <div id="Illustration-text">
-                <div id="Illustration-heading">
+        <Illustrationn>
+            <IllustrationText>
+                <IllustrationHeading>
                     More than just
                     shorter links
-                </div>
-                <div id="Illustration-description">
+                </IllustrationHeading>
+                <IllustrationDescription>
                     Build your brand recognition and get detailed <br/>
                     insigth on how your links are performing.
-                </div>
-                <button className="boost-button" id="Illustration-button">Get Started</button>
-            </div>
-                <img id="Illustration-image"src={IllustrationImage} alt="Illustration"></img>
-        </div>
+                </IllustrationDescription>
+                <IllustrationButton>Get Started</IllustrationButton>
+            </IllustrationText>
+                <IllustrationImagee src={IllustrationImage} alt="Illustration"></IllustrationImagee>
+        </Illustrationn>
     )
 }
 
