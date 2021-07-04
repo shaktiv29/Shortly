@@ -35,7 +35,8 @@ export const FeatureCards = styled.ul`
     @media (max-width:952px) {
         flex-direction: column;
         align-items: center;
-        margin-left: -20%;
+        margin-left: -10%;
+        margin-top: 130px;
     }
 `;
 
@@ -47,6 +48,10 @@ export const FeatureCard1 = styled.li`
     margin-right: 5%;
     border-radius: 10px;
     margin-top: -5%;
+    @media (max-width:952px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
     `;
 
 export const FeatureCard2 = styled.li`
@@ -58,6 +63,8 @@ export const FeatureCard2 = styled.li`
     border-radius: 10px;
     @media (max-width:952px) {
         margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
     }
     `;
 
@@ -101,6 +108,11 @@ export const CardBox2 = styled.div`
     margin-top: 120px;
     @media (max-width:952px) {
         margin-left: -100%;
+        margin-top: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 55px;
+        width: 12px;
     }
 `;
 

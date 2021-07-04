@@ -7,7 +7,12 @@ export const Headerr = styled.div`
     }
 `;
 
-export const HeaderLogo = styled.span`margin: 3% 0% 3% 10%;`;
+export const HeaderLogo = styled.span`
+margin: 3% 0% 3% 10%;
+@media (max-width: 952px) {
+       margin:  3% auto;
+    }
+    `;
 
 export const HeaderFirstPart = styled.span`display: flex;
 margin: 3% 0% 4% 2%;

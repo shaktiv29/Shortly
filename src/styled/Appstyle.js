@@ -100,8 +100,8 @@ export const GreyBackground = styled.div `
             top: 1315px;
             left: 0%;
             background-color: rgb(240, 241, 246);
-            height: calc(2600px - 90vw);
-            width: 600px;
+            height: 1700px;
+            width: 100vw;
             z-index: -100;
         }
 `;
@@ -164,7 +164,12 @@ export const NewLink = styled.span `
         /* padding-left: 55%; */
         display: flex;
         background-color: white;
-        margin-right: 0%;   
+        margin-right: 0%;  
+        @media (max-width: 952px) {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        } 
 `;
 
 export const LinkHistory = styled.div `
@@ -177,6 +182,10 @@ export const LinkHistory = styled.div `
         border-radius: 8px;
         background-size: cover;
         margin-top: 10px;
+        @media (max-width: 952px) {
+            flex-direction: column;
+            text-align: center;
+        }
     `;
 
 export const NewLinkk = styled.span `

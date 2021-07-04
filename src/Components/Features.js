@@ -27,7 +27,7 @@ function Features(){
                         confidence in your content.
                     </CardDescription>
                 </FeatureCard1>
-                <li><CardBox2></CardBox2></li>
+                <li><CardBox></CardBox></li>
                 <FeatureCard2><SquareImage>
                     <img src={DetailedRecords} alt="DR"></img>
                     </SquareImage>
@@ -41,7 +41,7 @@ function Features(){
                         helps inform better decisions.
                     </CardDescription>
                 </FeatureCard2>
-                <li><CardBox></CardBox></li>
+                <li><CardBox2></CardBox2></li>
                 <FeatureCard3><SquareImage>
                     <img src={FullyCustomizable} alt="FC"></img>
                     </SquareImage>
