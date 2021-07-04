@@ -114,6 +114,6 @@ class App extends React.Component{
 }
 }
 
-App.defaultProps ={ data:[['https://google.com','https://shortly.com/sdifj']]}
+App.defaultProps ={ data:[]}
 
 export default App;
